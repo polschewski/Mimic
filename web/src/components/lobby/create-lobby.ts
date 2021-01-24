@@ -96,7 +96,7 @@ export default class CreateLobby extends Vue {
 
         // Collect queues.
         for (const queue of this.queues) {
-            if (queue.category !== "PvP") continue; // only render pvp queues
+            //if (queue.category !== "PvP") continue; // only render pvp queues
             if (queue.queueAvailability !== "Available" || !this.enabledGameQueues.includes(queue.id)) continue;
 
             const key = queue.mapId + "-" + queue.gameMode;
